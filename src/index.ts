@@ -13,6 +13,6 @@ export default function handler(options: any): Rule {
   ]);
   return chain([
     mergeWith(templateSource),
-    App.make(WordpressService).declareInServiceProvider('app/Providers/BlockServiceProvider.php', `\\App\\Blocks\\Contact2Block::class,`)
+    App.make(WordpressService).declareInServiceProvider('app/Providers/BlockServiceProvider.php', `\\App\\Blocks\\Contact3Block::class,`)
   ]);
 }
